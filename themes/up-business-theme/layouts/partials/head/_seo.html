@@ -1,0 +1,8 @@
+{{ if isset .Site.Params "googleanalytics" }}
+  {{ if .Site.GoogleAnalytics }}
+    {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
+{{ end }}
+
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/schema.html" . }}
