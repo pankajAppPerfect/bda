@@ -101,3 +101,21 @@ menus:
 taxonomies:
   series: "series"
   tags: "tags"
+
+module:
+  mounts:
+    - source: layouts
+      target: layouts
+    - source: content
+      target: content
+    - source: static
+      target: static
+    - source: layouts/shortcodes
+      target: layouts/shortcodes
+    - source: assets
+      target: assets
+    - source: archetypes
+      target: archetypes
+  imports:
+    - disable: true
+      path: github.com/gohugoio/hugo-mod-x
